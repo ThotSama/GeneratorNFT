@@ -1,0 +1,5 @@
+CREATE TABLE collection(
+   id_collection VARCHAR(50),
+   name_collection VARCHAR(50),
+   PRIMARY KEY(id_collection)
+);

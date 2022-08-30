@@ -1,0 +1,6 @@
+CREATE TABLE filtresAppliques(
+   id_image VARCHAR(50) NOT NULL,
+   id_filtre VARCHAR(50) NOT NULL,
+   FOREIGN KEY(id_image) REFERENCES image(id_image),
+   FOREIGN KEY(id_filtre) REFERENCES filtre(id_filtre)
+);

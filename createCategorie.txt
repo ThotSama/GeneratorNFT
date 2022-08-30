@@ -1,0 +1,7 @@
+CREATE TABLE categorie(
+   id_categorie VARCHAR(50),
+   name_categorie VARCHAR(50),
+   id_collection VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_categorie),
+   FOREIGN KEY(id_collection) REFERENCES collection(id_collection)
+);

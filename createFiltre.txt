@@ -1,0 +1,7 @@
+CREATE TABLE filtre(
+   id_filtre VARCHAR(50),
+   name_filtre VARCHAR(50),
+   id_categorie VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_filtre),
+   FOREIGN KEY(id_categorie) REFERENCES categorie(id_categorie)
+);
